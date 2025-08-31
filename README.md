@@ -2,12 +2,34 @@
 Шаблон для отчетов и РПЗ МГТУ
 
 ## Environment
-- Операционная система: Linux, Windows;
-- Компилятор: pdflatex.
+### Операционная система: Ubuntu 20.04 и выше;
+
+### texlive. Установка через:
+```bash
+sudo apt update
+sudo apt install -y texlive-latex-recommended texlive-latex-extra
+```
+
+### Система сборки latexmk. Установка через:
+```bash
+sudo apt update
+sudo apt install latexmk
+```
+
+### Набор для работы с библиографией biber
+```bash
+sudo apt update
+sudo apt install biber
+```
 
 ## Dependencies
-- texlive. Установка через ```sudo apt install texlive```;
-- LaTEX-класс bmstu. Установка через ```sudo tlmgr install bmstu```.
+
+LaTEX-класс bmstu. Установка через:
+```bash
+git clone https://github.com/Orianti/bmstu-latex-class.git
+cd bmstu-latex-class/
+mkdir -p $(kpsewhich -var-value TEXMFHOME)/tex/latex/ && cp -R bmstu $_
+```
 
 ## Build and run
 cd main-service

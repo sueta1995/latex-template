@@ -1,1 +1,5 @@
+# Directory with pdf-file and build files
 build/
+
+# Directory with VS Code environment files
+.vscode/

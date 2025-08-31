@@ -1,5 +1,5 @@
 ## latex-template
-Шаблон для отчетов и РПЗ МГТУ
+Шаблон для отчетов и РПЗ МГТУ LaTEX.
 
 ## Environment
 ### Операционная система: Ubuntu 20.04 и выше
@@ -7,7 +7,7 @@
 ### texlive
 ```bash
 sudo apt update
-sudo apt install -y texlive-latex-recommended texlive-latex-extra
+sudo apt install -y texlive-latex-recommended texlive-latex-extra texlive-lang-cyrillic cm-super
 ```
 
 ### Система сборки latexmk

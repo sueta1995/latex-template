@@ -2,15 +2,15 @@
 Шаблон для отчетов и РПЗ МГТУ
 
 ## Environment
-### Операционная система: Ubuntu 20.04 и выше;
+### Операционная система: Ubuntu 20.04 и выше
 
-### texlive. Установка через:
+### texlive
 ```bash
 sudo apt update
 sudo apt install -y texlive-latex-recommended texlive-latex-extra
 ```
 
-### Система сборки latexmk. Установка через:
+### Система сборки latexmk
 ```bash
 sudo apt update
 sudo apt install latexmk
@@ -20,6 +20,12 @@ sudo apt install latexmk
 ```bash
 sudo apt update
 sudo apt install biber
+```
+
+### Система сборки make
+```bash
+sudo apt update
+sudo apt install make
 ```
 
 ## Dependencies
@@ -32,10 +38,9 @@ mkdir -p $(kpsewhich -var-value TEXMFHOME)/tex/latex/ && cp -R bmstu $_
 ```
 
 ## Build and run
-cd main-service
-mkdir build
-cd build
-cmake ..
+```bash
+make
+```
 
 ## Authors
 Китаев Т.А.
